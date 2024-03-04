@@ -19,9 +19,14 @@ body{
     width:90%;
     margin: 0 auto;
     position: relative;
-    background: var(--color1);
+    background: url("./images/bg-desktop.svg") var(--color1);
+    background-size: cover;
+    height: 100vh;
     color: whitesmoke;
-
+    @media (max-width: 400px) { 
+        background: url("./images/bg-mobile.svg") no-repeat var(--color1);
+       
+     }
 }
 
 header{
@@ -117,4 +122,5 @@ footer{
         justify-content: center;
        
      }
+     
 }
